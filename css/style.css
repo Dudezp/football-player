@@ -1,0 +1,74 @@
+.field {
+    width: 600px;
+    height: 600px;
+/*    background: #51b449;*/
+    position: relative;
+}
+.field .man {
+    background-image: url(../img/neymar-sprite.png);
+    height: 294px;
+    width: 150px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.field .ball {
+    background-image: url(../img/ball.png);
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 244px;
+    left: 150px;
+}
+.field:hover .man {
+    width: 230px;
+    background-position: 1470px;
+}
+.field:hover .ball{
+    top: 120px;
+    left: 500px;
+    transition: all 1s;
+    transition-property: top, left, transform;
+    transform: rotate(800deg);
+}
+.roof .st {
+    display: inline-block;
+    vertical-align: text-top;
+}
+.st {
+    background-image: url(../img/Stal.png);
+    width: 50px;
+    height: 100px;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    display: inline-block;
+}
+.st._sx {
+    height: 90px;
+}
+.st._sxl {
+    height: 120px;
+}
+.st._sxxl {
+    height: 132px;
+}
+.field .bang {
+    background-image: url(../img/bang.png);
+    -webkit-background-size: 100px;
+    background-size: 100%;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 93px;
+    left: 480px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0s linear 0.3s
+}
+.field:hover .bang {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.8s;
+}
