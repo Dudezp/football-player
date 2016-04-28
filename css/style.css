@@ -1,8 +1,12 @@
 .field {
-    width: 600px;
+/*    background-image: url(../img/Pole.png);*/
+    width: 1000px;
     height: 600px;
-/*    background: #51b449;*/
     position: relative;
+/*
+    background-repeat: no-repeat;
+    background-size: 800px 600px;
+*/
 }
 .field .man {
     background-image: url(../img/neymar-sprite.png);
@@ -71,4 +75,19 @@
     opacity: 1;
     visibility: visible;
     transition-delay: 0.8s;
+}
+.field #wrapper {
+    width: 1151px;
+    height: 386px;
+    perspective: 630px;
+    position: absolute;
+}
+.field .flor {
+    background-image: url(../img/Pole.png);
+    width: 1239px;
+    height: 500px;
+    position: absolute;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    transform: rotateX(70deg);
 }
