@@ -42,7 +42,7 @@
     vertical-align: text-top;
 }
 .st {
-    background-image: url(../img/Stal.png);
+    background-image: url(../img/lenti.png);
     width: 50px;
     height: 100px;
     -webkit-background-size: 100% 100%;
@@ -82,7 +82,7 @@
     perspective: 630px;
     position: absolute;
 }
-.field .flor {
+.field .pole {
     background-image: url(../img/Pole.png);
     width: 1239px;
     height: 500px;
