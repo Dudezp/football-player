@@ -1,12 +1,7 @@
 .field {
-/*    background-image: url(../img/Pole.png);*/
     width: 1000px;
     height: 600px;
     position: relative;
-/*
-    background-repeat: no-repeat;
-    background-size: 800px 600px;
-*/
 }
 .field .man {
     background-image: url(../img/neymar-sprite.png);
@@ -31,50 +26,11 @@
     background-position: 1470px;
 }
 .field:hover .ball{
-    top: 120px;
-    left: 500px;
-    transition: all 1s;
-    transition-property: top, left, transform;
-    transform: rotate(800deg);
-}
-.roof .st {
-    display: inline-block;
-    vertical-align: text-top;
-}
-.st {
-    background-image: url(../img/lenti.png);
-    width: 50px;
-    height: 100px;
-    -webkit-background-size: 100% 100%;
-    background-size: 100% 100%;
-    display: inline-block;
-}
-.st._sx {
-    height: 90px;
-}
-.st._sxl {
-    height: 120px;
-}
-.st._sxxl {
-    height: 132px;
-}
-.field .bang {
-    background-image: url(../img/bang.png);
-    -webkit-background-size: 100px;
-    background-size: 100%;
-    width: 90px;
-    height: 90px;
-    position: absolute;
-    top: 93px;
-    left: 480px;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s, visibility 0s linear 0.3s
-}
-.field:hover .bang {
-    opacity: 1;
-    visibility: visible;
-    transition-delay: 0.8s;
+    animation-name: weird_ball;
+    animation-duration: 6s;
+    -webkit-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
 }
 .field #wrapper {
     width: 1151px;
@@ -90,4 +46,33 @@
     -webkit-background-size: 100% 100%;
     background-size: 100% 100%;
     transform: rotateX(70deg);
+}
+.sky {
+}
+.sky .ufo {
+    background-image: url(../img/UFO.png);
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 455px;
+    top: 10px;
+}
+@keyframes weird_ball {
+    0% {
+        top: 244px;
+        left: 150px;
+    }
+    40% {
+        top: 120px;
+        left: 500px;
+    }
+    64% {
+        top: 90px;
+    }
+    100% {
+        top: 4px;
+        left: 79px;
+    }
 }
