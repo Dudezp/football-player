@@ -31,6 +31,7 @@
     -webkit-animation-timing-function: linear;
     -o-animation-timing-function: linear;
     animation-timing-function: linear;
+    animation-fill-mode: forwards;
 }
 .field #wrapper {
     width: 1151px;
